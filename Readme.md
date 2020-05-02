@@ -47,6 +47,11 @@ launchctl unload ~/Library/LaunchAgents/org.gpgtools.Libmacgpg.xpc.plist
 launchctl load -w ~/Library/LaunchAgents/org.gpgtools.Libmacgpg.xpc.plist
 ```
 
+Replace Libmacgpg:
+```bash
+sudo cp ./build/Release/org.gpgtools.Libmacgpg.xpc/Contents/MacOS/org.gpgtools.Libmacgpg /Library/Application\ Support/GPGTools/org.gpgtools.Libmacgpg.xpc/Contents/MacOS
+```
+
 Enjoy your custom Libmacgpg.
 
 
